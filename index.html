@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima-Tempo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+
+    <main class="principal">
+
+        <header class="entrada">
+            <input  class="entrada-cidade" placeholder="Procure uma Cidade" type="text">
+            <button class="btn-busca">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </header>
+
+        <section class="info-clima" style="display: none">
+            <div class="data-loc">
+                <div class="loc">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <h4 class="pais">Salvador</h4>
+                </div>
+                <h5 class="data-atual data-ant">Seg, 12 de maio</h5>
+            </div>
+
+            <div class="resumo">
+                <img src="anexos/weather/clouds.svg" class="resumo-img">
+                <div class="resumo-info">
+                    <h1 class="temp">29 °C</h1>
+                    <h3 class="cond-txt data-ant">Nublado</h3>
+                </div>
+            </div>
+
+            <div class="clima-cond">
+                <div class="cond-item">
+                    <span class="material-symbols-outlined">
+                        water_drop
+                    </span>
+                    <div class="cond-info">
+                        <h5 class="data-ant">Umidade</h5>
+                        <h5 class="valor-umidade">55%</h5>
+                    </div>
+                </div>
+                <div class="cond-item">
+                    <span class="material-symbols-outlined">
+                        air
+                    </span>
+                    <div class="cond-info">
+                        <h5 class="data-ant">Vento</h5>
+                        <h5 class="valor-vento">10 M/s</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="previsao">
+                <div class="previsao-item">
+                    <h5 class="data-previsao data-ant">10 de maio</h5>
+                    <img src="anexos/weather/drizzle.svg" class="previsao-img">
+                    <h5 class="temp-previsao">29 °C</h5>
+                </div>
+                <div class="previsao-item">
+                    <h5 class="data-previsao data-ant">10 de maio</h5>
+                    <img src="anexos/weather/drizzle.svg" class="previsao-img">
+                    <h5 class="temp-previsao">29 °C</h5>
+                </div>
+                <div class="previsao-item">
+                    <h5 class="data-previsao data-ant">10 de maio</h5>
+                    <img src="anexos/weather/drizzle.svg" class="previsao-img">
+                    <h5 class="temp-previsao">29 °C</h5>
+                </div>
+                <div class="previsao-item">
+                    <h5 class="data-previsao data-ant">10 de maio</h5>
+                    <img src="anexos/weather/drizzle.svg" class="previsao-img">
+                    <h5 class="temp-previsao">29 °C</h5>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="busca section-mensagem">
+            <img src="anexos/message/search-city.png">
+             <div>
+                <h1>Procure uma Cidade</h1>
+                <h4 class="data-ant">
+                    Saiba a previsão do tempo de qualquer lugar
+                </h4>
+            </div>
+        </section>
+
+        <section class="nao-encontrado section-mensagem" style="display: none">
+            <img src="anexos/message/not-found.png">
+             <div>
+                <h1>Procure uma Cidade</h1>
+                <h4 class="data-ant">
+                    Saiba a previsão do tempo de qualquer lugar
+                </h4>
+            </div>
+        </section>
+
+    </main>
+    
+</body>
+</html>
