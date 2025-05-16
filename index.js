@@ -15,7 +15,7 @@ const dataAtual = document.querySelector('.data-atual')
 
 const previsao = document.querySelector('.previsao')
 
-const apiKey = `a19ceb56122978312747e5646f61697a`
+const apiKey = `SUA-API`
 
 btnBusca.addEventListener('click', () => {
     if (entradaCidade.value.trim() != ''){
